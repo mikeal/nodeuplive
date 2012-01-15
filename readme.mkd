@@ -1,0 +1,23 @@
+## jsBBQ website
+
+This website is a simple couchapp for the jsBBQ meetups.
+
+## Install
+
+Install node.
+
+Install node-couchapp with npm.
+
+    npm install couchapp
+    
+Sync to your couchdb.
+
+    couchapp push app.js http://localhost:5984/dbname
+    
+This will push the app to your couch and then idle while you edit code. Whenever you save edits to your attachments it'll update them.
+
+You'll probably want to add a vhost to the rewriter for the ddoc as well.
+    
+## Writing some codes.
+
+This is a dirt simple couchapp that uses sammy for pretty everything. If you know jquery and sammy you're good to go.
