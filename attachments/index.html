@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>NodeUp Live -- January 23rd 2012</title>
-    <link href="/layout.css" rel="stylesheet" type="text/css" />
+    <link href="layout.css" rel="stylesheet" type="text/css" />
     <script language="javascript" type="text/javascript" src="jquery-1.4.2.min.js"></script>
     <script language="javascript" type="text/javascript" src="sammy/sammy.js"></script>
     <script language="javascript" type="text/javascript" src="sammy/plugins/sammy.mustache.js"></script>
@@ -13,43 +13,36 @@
   
   <body>
     <div id="background"></div>
-    <div class="main-title">NodeUp Live</div>
-    <div class="container" id="main-container">
-      <div class="left-space">&nbsp</div>
-      <div class="content">
-        <div id="event">
-          <div id="upcoming-event"> </div>
+    <div id="con">
+      <div id="left">
+        <div id="logo">
         </div>
-      </div>
-      <div class="left-space">&nbsp</div>
-    </div>
-    
-    <div class="spacer"></div>
-
-    <div class="spacer"></div>
-    <div class="container">
-      <div class="left-space">&nbsp</div>
-      <div class="content">
-        <div class="spacer" ></div>
-        <div class="attendee-header">Attendee List</div>
-        
-        <div id="attendees"></div>        
-          <div id="rsvp"> 
+        NodeUp Live in SF<br/>
+        Monday, January 23rd 2012<br/>
+        <a href="http://maps.google.com/maps/place?q=bottom+of+the+hill&hl=en&cid=9162671024092880955">Bottom of the Hill Bar</a><br/><br/>
+        8:00pm<br/>Doors Open<br/>Drink &amp Socialize<br/><br/>
+        9:00pm<br/>Live Podcast
+        <div id="rsvp"> 
+          <div class="rsvp-input">
+              <input class="rsvp" type="text" name="name" value="name"/>
+          </div>
             <div class="rsvp-input">
-                <span class="rsvp-name">name</span><input class="rsvp" type="text" name="name" />
+              <input class="rsvp" type="text" name="email" value="email"/>
             </div>
-            <div class="rsvp-input">
-              <span class="rsvp-name">email</span><input class="rsvp" type="text" name="email" />
-            </div>
-            <div><span class="rsvp-button-container"><span id="rsvp-button">RSVP!</span></span></div>
+            <div id="rsvp-button">RSVP!</div>
           </div>
         </div>
-        <div class="right-space">&nbsp</div>
+      <div id="mid">
+        <span class="headtitle">Hosting:</span><br/>
+          <div id="upcoming-event"> 
+          </div>
       </div>
-      
+      <div id="right">
+        <span class="headtitle">Attending:</span><br/>
+        <div id="attendees"></div>
+      </div>
     </div>
   </body>
-  
 </html>
 
 

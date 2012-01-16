@@ -1,111 +1,182 @@
-html {font: normal 110% OFL Sorts Mill GoudyRegular;}
-
-@font-face {
-  /* Regular */
-  font-family: "OFL Sorts Mill GoudyRegular";
-  src: url('http://themes.googleusercontent.com/font?kit=9ZZVVBRCceNnPBXqWLH8IBeHOylGMxdcwbe4vXI079w') format('truetype');
-  font-weight:  400;
-  font-style:   normal;
-  font-variant: normal;
-  font-stretch: normal;
-}
-@font-face {
-  /* Normal */
-  font-family: "PuritanNormal";
-  src: url("http://openfontlibrary.org/content/benweiner/259/Puritan2.otf") format("opentype");
-  font-weight:  400;
-  font-style:   normal;
-  font-variant: normal;
-  font-stretch: normal;
-}
-@font-face {
-  font-family: 'Inconsolata';
-  font-style: normal;
-  font-weight: normal;
-  src: url('http://themes.googleusercontent.com/font?kit=7bMKuoy6Nh0ft0SHnIGMuaCWcynf_cDxXwCLxiixG1c') format('truetype');
-}
-@font-face {
-  font-family: 'Fontdiner Swanky';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Fontdiner Swanky'), local('FontdinerSwanky'), url('http://themes.googleusercontent.com/font?kit=8_GxIO5ixMtn5P6COsF3TpflEzs6CqquNOseSoBzzaY') format('truetype');
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0px 2px 3px black;
 }
 
-a {text-decoration:none; color:#0276FD;}
-
-body {
-  margin: 0,0,0,0;
+#background{
+  background-image: url(images/bg.png);
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
 }
 
-div#background {
-  background: url(http://cdn1.iconfinder.com/data/icons/Siena/256/microphone.png) center 180px no-repeat; 
-  background-size:450px;
-  width:99%; height:100%; position:absolute; z-index:-9999; 
-  opacity:0.2;
+a:link, a:visited, a:hover, a:active{
+  color: white;
 }
 
-
-div.main-title {
-  font-size:63px;
-  text-align:center; 
-  padding-bottom:20px;
-  font-family:Fontdiner Swanky;
-  color:#383838;
+#con{
+  width: 960px;
+  min-height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 30px;
 }
 
-div.container {width:100%;}
-div.left-space {float:left; width:20%;}
-div.right-space {float:left; width:20%;}
-div.content {float:left; width:60%; padding-bottom:20px;}
-
-div#rsvp {text-align:center; font-size:30px; padding-top:30px;}
-
-div.event-title {width:100%; font-size:30px; text-align:center; padding-bottom:15px;font-family:OFL Sorts Mill GoudyRegular;}
-div.event-item {width:100%; padding-bottom:12px;}
-div.event-time {width:16%; float:left; padding-bottom:14px; padding-right:4%; 
-                text-align:right; font-weight:bold; }
-div.event-break-title {width:80%; float:left; padding-bottom:12px;padding-top:2px;}
-span.code {font-family: Inconsolata; }
-div.event-talk-title {width:60%; float:left; padding-bottom:12px;}
-
-div.event-talk-title h4 {
-  font-family: Inconsolata; 
-  margin-top:0px;
-  font-size:120%;
+#con #left{
+  margin-top: 30px;
+  width: 300px;
+  float: left;
+  margin-right: 30px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
 }
 
-div.event-talk-pic {width:18%; float:left; padding-bottom:12px; padding-left:2%;}
-img.speaker {-moz-border-radius: 15px; border-radius: 15px; max-width:100px; max-height:100px}
-
-div.rsvp-input {padding-top:10px; padding-bottom:10px;}
-span.rsvp-name {padding-right:20px; font-weight:bold;}
-input.rsvp {width:80%; font-size:28px; text-align:center; }
-span.rsvp-button-container {}
-span#rsvp-button { font-weight:bold; cursor:pointer; background-color:#AAAAAA; padding-left:7px; padding-right:5px; font-size:25px;padding-top:5px;-moz-border-radius: 15px; border-radius: 15px;}
-div.spacer {clear:both;}
-/*div.attendee {width:100%;}*/
-div.attendee-name { width:62%; float:left; font-size:30px; padding-top:2px;
-                    text-align:right; padding-right:3%; vertical-align:middle;
-                    padding-bottom:5px;
-                  }
-div.attendee-pic {width:35%; float:left; padding-bottom:5px; }
-img.attendee-pic {-moz-border-radius: 15px; border-radius: 15px;}
-
-.attendee-header {padding-top:35px; padding-bottom:35px; text-align:center; font-size:40px;}
-
-div.sponsor-header {width:100%; text-align:center; font-size:40px; padding-top:55px; padding-bottom:10px;}
-div.sponsor-couchone {text-align:center; font-family: Chunkfive; padding-top:15px; font-size:55px; float:left; width:33.3%;}
-div.sponsor-sauce {text-align:center; float:left;  width:32.8%; padding-left:.5%;}
-div.sponsor-joyent {text-align:center; float:left; width:33.3%; padding-top:10px;}
-
-
-img.sponsor-sauce { vertical-align:absmiddle;}
-
-div#bring {
-  margin-left:20%;
-  margin-right:20%;
+#logo{
+  width: 300px;
+  height: 300px;
+  background: url(images/logo.png) no-repeat;
 }
-div#bring-title {
-  font-size:25px;
-  text-align:center;
+
+#rsvp{
+  margin-top: 30px;
+}
+
+.rsvp-input{
+  padding: 10px 0px 0px 0px;
+  font-size: 16px;
+}
+
+.rsvp{
+  width: 293px;
+  height: 30px;
+  font-size: 22px;
+  margin: 0;
+  background: white;
+  box-shadow: inset 0px 0px 20px rgba(0,0,0,0.3);
+  color: black;
+  text-shadow: none;
+}
+
+.rsvp:focus{
+  outline: none;
+}
+
+#rsvp-button{
+  display: block;
+  margin: 10px 0px 0px 0px;
+  width: 300px;
+  height: 44px;
+  padding-top: 16px;
+  background: white;
+  box-shadow: inset 0px 0px 20px rgba(0,0,0,0.3);
+  cursor: pointer;
+  font-size: 24px;
+  color: black;
+  text-shadow: none;
+}
+
+#con #mid{
+  width: 300px;
+  min-height: 50px;
+  float: left;
+  padding-top: 30px;
+}
+
+#mid .event-item{
+  width: 300px;
+  overflow: hidden;
+  padding: 30px 0px 0px 0px;
+}
+
+#mid .event-item-left{
+  width: 60px;
+  float: left;
+}
+
+#mid .event-item-left img{
+  height: 55px;
+  width: 55px;
+  border: 5px solid white;
+  box-shadow: 0px 2px 3px black;
+}
+
+.headtitle{
+  font-size: 22px;
+}
+
+#mid .hostname{
+  width: 220px;
+  padding-left: 20px;
+  float: left;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+
+#mid .hostdesc{
+  padding-left: 20px;
+  font-size: 14px;
+  width: 220px;
+  float: left;
+}
+
+#mid .event-talk-pic{
+  float: left;
+}
+
+#con #right{
+  width: 300px;
+  float: left;
+  margin-left: 30px;
+  padding-top: 30px;
+}
+.attendee{
+  padding-top: 30px;
+  overflow: hidden;
+}
+.attendee-left{
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+.attendee-right{
+  width: 260px;
+  float: right;
+}
+.attendee-pic{
+  height: 40px;
+  width: 40px;
+}
+.attendee-name{
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+#right img{
+  height: 30px;
+  width: 30px;
+  border: 5px solid white;
+}
+
+#main{
+  color: white;
+  font-family: sans-serif;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 420px;
+}
+
+#con{
+  padding: 0px 20px 0px 20px;
+  margin-bottom: 60px;
 }
