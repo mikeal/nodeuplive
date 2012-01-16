@@ -80,7 +80,7 @@ app.index = function () {
   }
   $('div#upcoming-event').append($(text))
   
-  $('span#rsvp-button').click(function () {
+  $('#rsvp-button').click(function () {
     var data = {  email: $("input[name=email]").val()
                 , name: $("input[name=name]").val()
                 , type: 'rsvp'
@@ -93,11 +93,14 @@ app.index = function () {
       }
     })
   })
-  .hover(
-      function () {$(this).css("background-color", "#BABABA")}, 
-      function () {$(this).css("background-color", "#AAAAAA")}
-  )
   ;
+
+  $(".rsvp").focus(function(){
+    if($(this).val() == $(this).attr("name")){
+     $(this).val("");
+    }
+
+  });
   
   request({url:'/_view/rsvp?'+$.param({key: JSON.stringify(meetup.date), include_docs:'true'})}, function (err, resp) {
     resp.rows.forEach( function (row) {
