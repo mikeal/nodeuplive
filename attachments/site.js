@@ -96,8 +96,15 @@ app.index = function () {
   ;
 
   $(".rsvp").focus(function(){
-    if($(this).val() == $(this).attr("name")){
+    if($(this).val() === $(this).attr("name")){
      $(this).val("");
+    }
+
+  });
+
+  $(".rsvp").blur(function(){
+    if($(this).val() === ""){
+     $(this).val($(this).attr("name"));
     }
 
   });
