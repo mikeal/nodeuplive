@@ -7,6 +7,7 @@ body{
   font-family: sans-serif;
   font-size: 16px;
   text-shadow: 0px 2px 3px black;
+  background: black;
 }
 
 #background{
@@ -49,7 +50,7 @@ a:link, a:visited, a:hover, a:active{
 }
 
 #rsvp{
-  margin-top: 30px;
+  margin: 30px 0px 30px 0px;
 }
 
 .rsvp-input{
@@ -84,6 +85,15 @@ a:link, a:visited, a:hover, a:active{
   font-size: 24px;
   color: black;
   text-shadow: none;
+}
+
+#sponsors{
+  text-align: left; 
+  font-weight: normal;
+}
+
+#sponsor_images img{
+  padding: 30px;
 }
 
 #con #mid{
