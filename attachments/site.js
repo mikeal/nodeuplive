@@ -13,8 +13,14 @@ var request = function (options, callback) {
 
 var mikealPicture = 'https://secure.gravatar.com/avatar/d8eba8dd0e89a0580ec4157681121a79?s=140'
   , mikealDescription = '<div class="hostname">Mikeal Rogers</div><div class="hostdesc">Author of request, filed. Curator of NodeConf</div>'
+  , isaacPicture = 'https://secure.gravatar.com/avatar/73a2b24daecb976af81e010b7a3ce3c6?s=140'
+  , isaacDescription = '<div class="hostname">Isaac Z. Scluter</div><div class="hostdesc">Creator of npm</div>'
+  , paoloPicture = 'https://secure.gravatar.com/avatar/8af5b97a9869fc1387f683afbb875fef?s=140'
+  , paoloDescription = '<div class="hostname">Paolo Fragomeni</div><div class="hostdesc">Co-founder and CTO of Nodejitsu</div>'
+  , nunoPicture = 'https://secure.gravatar.com/avatar/a998795c23a775e72ee28643c482a1f4?s=140'
+  , nunoDescription = '<div class="hostname">Nuno Job</div><div class="hostdesc">Author of nano, founder at ExpenseCat & The Node Firm</div>'
   , dshawPicture = 'https://secure.gravatar.com/avatar/dc2beefe13f65e75fd74eae1b1c1b803?s=140'
-  , dshawDescription = '<div class="hostname">Daniel Shaw</div><div class="hostdesc">socket.io contributor</div>'
+  , dshawDescription = '<div class="hostname">Daniel Shaw</div><div class="hostdesc">Socket.io Contributor</div>'
   , substackPicture = 'https://secure.gravatar.com/avatar/d4a2f12ceae3b7f211b661576d22bfb9?s=140'
   , substackDescription = '<div class="hostname">James Halliday</div><div class="hostdesc">Author of nearly 100 modules including dnode</div>'
   , csanzPicture = 'https://secure.gravatar.com/avatar/0fc8248ddec8add2e20b29cc24cf9992?s=140'
@@ -24,7 +30,7 @@ var mikealPicture = 'https://secure.gravatar.com/avatar/d8eba8dd0e89a0580ec41576
   , chrisPicture = 'https://secure.gravatar.com/avatar/fff2222d0a24009fe938bba62946201a?s=140'
   , chrisDescription = '<div class="hostname">Chris Wiliams</div><div class="hostdesc">Curator of JSConf and author of node-serial</div>'
   , visnuPicture = 'https://secure.gravatar.com/avatar/70281240c4fc8583292ac175e05bb8fe?s=140'
-  , visnuDescription = '<div class="hostname">Visnu Pitiyanuvath</div><div class="hostdesc">Creator of Node Knockout.</div>'
+  , visnuDescription = '<div class="hostname">Visnu Pitiyanuvath</div><div class="hostdesc">Creator of Node Knockout</div>'
   ;
 
 var meetup = {
@@ -33,8 +39,11 @@ var meetup = {
   , locationLink: 'http://maps.google.com/maps/place?q=bottom+of+the+hill&hl=en&cid=9162671024092880955'
   , schedule: [
         ['', mikealDescription, mikealPicture]
-      , ['', dshawDescription, dshawPicture]
+      , ['', isaacDescription, isaacPicture]
       , ['', substackDescription, substackPicture]
+      , ['', dshawDescription, dshawPicture]
+      , ['', paoloDescription, paoloPicture]
+      , ['', nunoDescription, nunoPicture]
       , ['', csanzDescription, csanzPicture]
       , ['', marcoDescription, marcoPicture]
       , ['', chrisDescription, chrisPicture]
