@@ -14,7 +14,7 @@ var request = function (options, callback) {
 var mikealPicture = 'https://secure.gravatar.com/avatar/d8eba8dd0e89a0580ec4157681121a79?s=140'
   , mikealDescription = '<div class="hostname">Mikeal Rogers</div><div class="hostdesc">Author of request, filed. Curator of NodeConf</div>'
   , isaacPicture = 'https://secure.gravatar.com/avatar/73a2b24daecb976af81e010b7a3ce3c6?s=140'
-  , isaacDescription = '<div class="hostname">Isaac Z. Scluter</div><div class="hostdesc">Creator of npm</div>'
+  , isaacDescription = '<div class="hostname">Isaac Z. Schlueter</div><div class="hostdesc">Creator of npm</div>'
   , paoloPicture = 'https://secure.gravatar.com/avatar/8af5b97a9869fc1387f683afbb875fef?s=140'
   , paoloDescription = '<div class="hostname">Paolo Fragomeni</div><div class="hostdesc">Co-founder and CTO of Nodejitsu</div>'
   , nunoPicture = 'https://secure.gravatar.com/avatar/a998795c23a775e72ee28643c482a1f4?s=140'
