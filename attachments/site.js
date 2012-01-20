@@ -95,6 +95,8 @@ app.index = function () {
                 , type: 'rsvp'
                 , eventDate: meetup.date
                 }
+    if (data.name === 'name') return
+    if (data.email === 'email') return
     request({type:'POST', url:'/api', data: JSON.stringify(data)}, function (err, obj) {
       if (obj.id) {
         $("div#rsvp").remove();
